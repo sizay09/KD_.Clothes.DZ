@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KD_.Clothes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div
+      style="background-image: url(./assets/photo-2.png)"
+      class="h-160 lg:h-screen bg-top bg-cover bg-no-repeat relative rounded-b-4xl"
+    >
+      <nav
+        id="navbar"
+        class="text-white flex justify-between items-center py-6 px-5 fixed top-0 left-0 right-0 transition-all duration-300 z-50"
+      >
+        <h1 class="text-2xl font-bold">
+          KD_.<span class="text-red-400">Clothes</span>
+        </h1>
+        <ul class="flex gap-10 font-medium hidden lg:flex">
+          <li class="text-white hover:text-red-400 cursor-pointer">
+            <a href="#home">Home</a>
+          </li>
+          <li class="text-white hover:text-red-400 cursor-pointer">
+            <a href="#products">Products</a>
+          </li>
+          <li class="text-white hover:text-red-400 cursor-pointer">
+            <a href="#services">Services</a>
+          </li>
+          <li class="text-white hover:text-red-400 cursor-pointer">
+            <a href="#about">About</a>
+          </li>
+        </ul>
+        <div class="flex flex-row gap-3 items-center">
+          <button
+            class="border-1 py-1 px-5 rounded-3xl font-medium text-white border-white hover:text-red-400 hover:border-red-400 cursor-pointer"
+          >
+            Contact
+          </button>
+          <button class="relative">
+            <i
+              class="fa-solid fa-cart-shopping text-white/50 border-1 p-1 rounded-full text-sm cursor-pointer hover:text-black/50 hover:bg-white/30"
+            ></i>
+            <span id="cart-count" class="absolute -top-1 -right-1 bg-red-500 text-white/.50 text-[10px] font-bold rounded-full h-3 w-3 flex items-center justify-center transition-transform"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Home -->
+      <div
+        class="flex flex-col justify-center items-center text-center h-full text-white gap-5"
+        id="home"
+      >
+        <div
+          class="flex justify-center text-8xl font-bold gap-80 pb-32 text-amber-100"
+        >
+          <h1 class="hidden lg:flex">FASHION</h1>
+          <h1 class="hidden lg:flex">SHOP</h1>
+        </div>
+        <div class="absolute lg:left-12 pt-100 lg:pt-70 text-sm font-medium">
+          <p>
+            Elevate your style with our curated collection of<br />
+            Discover thougtfully ceafted fashion that blends<br />
+            timeless elegance with everyday comfort. Designed<br />
+            for modern lifestyle, made to elevate every moment.
+          </p>
+          <button
+            class="absolute bg-amber-100 left-20 lg:left-5 mt-5 lg:mt-8 border-1 py-2 pl-5 pr-16.5 rounded-3xl font-medium text-black border-white hover:text-red-400 hover:border-red-400 cursor-pointer w-39 lg:w-39"
+          ><a href="#products"><i
+            class="fa-solid fa-arrow-right absolute text-medium bg-sky-400 rounded-full p-2 left-30 top-1"
+          ></i>Shop Now</a>
+          </button>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- products -->
+
+    <div class="py-15 px-17 flex flex-col gap-12" id="products">
+      <div class="flex flex-col justify-center items-center gap-2">
+        <h1 class="text-4xl font-semibold underline">Our Products :</h1>
+        <p class="text-amber-500 font-medium">
+          take a look at our latest collection.
+        </p>
+      </div>
+      <button
+        class="absolute right-20 lg:right-25 mt-20 lg:mt-20 py-1 px-6 text-[15px] font-semibold border-1 rounded-full bg-blue-400 cursor-pointer text-white hover:text-blue-400 hover:bg-white"
+      >
+        See All
+      </button>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="flex flex-col bg-gray-200 shadow-lg rounded-xl">
+          <div>
+            <img
+              src="./assets/IMG_6866.JPG"
+              alt="prdct1"
+              class="object-cover rounded-t-xl h-65 w-full"
+            />
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div>
+              <h2 class="text-xl font-semibold">Encemble Gris</h2>
+              <p class="font-normal">
+                3700 / <span class="text-green-700 font-semibold">د.ج</span>
+              </p>
+            </div>
+            <div class="flex justify-between">
+              <p class="font-sm text-sm">
+                <i class="fa-solid fa-truck-fast text-sky-500"></i> 24h
+              </p>
+              <button
+                class="buy-btn border-1 border-sky-500 py-0.5 px-7 cursor-pointer rounded-full hover:bg-sky-500 hover:text-white hover:border-black transition duration-300"
+              >
+                Buy <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-gray-200 shadow-lg rounded-xl">
+          <div>
+            <img
+              src="./assets/IMG_6867.JPG"
+              alt="prdct1"
+              class="object-cover rounded-t-xl h-65 w-full"
+            />
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div>
+              <h2 class="text-xl font-semibold">Encemble Noir</h2>
+              <p class="font-normal">
+                3700 / <span class="text-green-700 font-semibold">د.ج</span>
+              </p>
+            </div>
+            <div class="flex justify-between">
+              <p class="font-sm text-sm">
+                <i class="fa-solid fa-truck-fast text-sky-500"></i> 24h
+              </p>
+              <button
+                class="buy-btn border-1 border-sky-500 py-0.5 px-7 cursor-pointer rounded-full hover:bg-sky-500 hover:text-white hover:border-black transition duration-300"
+              >
+                Buy <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-gray-200 shadow-lg rounded-xl">
+          <div>
+            <img
+              src="./assets/Low-Profile-western-dad-Hats.jpg"
+              alt="prdct1"
+              class="object-cover rounded-t-xl h-65 w-full"
+            />
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div>
+              <h2 class="text-xl font-semibold">Hat</h2>
+              <p class="font-normal">
+                1200 / <span class="text-green-700 font-semibold">د.ج</span>
+              </p>
+            </div>
+            <div class="flex justify-between">
+              <p class="font-sm text-sm">
+                <i class="fa-solid fa-truck-fast text-sky-500"></i> 24h
+              </p>
+              <button
+                class="buy-btn border-1 border-sky-500 py-0.5 px-7 cursor-pointer rounded-full hover:bg-sky-500 hover:text-white hover:border-black transition duration-300"
+              >
+                Buy <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-gray-200 shadow-lg rounded-xl">
+          <div>
+            <img
+              src="./assets/IMG_6866.JPG"
+              alt="prdct1"
+              class="object-cover rounded-t-xl h-65 w-full"
+            />
+          </div>
+          <div class="p-4 flex flex-col gap-2">
+            <div>
+              <h2 class="text-xl font-semibold">Encemble Gris</h2>
+              <p class="font-normal">
+                3700 / <span class="text-green-700 font-semibold">د.ج</span>
+              </p>
+            </div>
+            <div class="flex justify-between">
+              <p class="font-sm text-sm">
+                <i class="fa-solid fa-truck-fast text-sky-500"></i> 24h
+              </p>
+              <button
+                class="buy-btn border-1 border-sky-500 py-0.5 px-7 cursor-pointer rounded-full hover:bg-sky-500 hover:text-white hover:border-black transition duration-300"
+              >
+                Buy <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="py-15 px-17 flex flex-col gap-10" id="services">
+      <div class="flex flex-col justify-center items-center gap-2">
+        <h1 class="text-4xl font-semibold underline">Our Services :</h1>
+        <p class="text-amber-500 font-medium">take a look at our Services.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div
+          class="flex flex-col gap-2 justify-center items-center text-center bg-gray-100 shadow-lg p-8 rounded-2xl"
+        >
+          <i class="fa-solid fa-truck-fast text-7xl text-sky-500"></i>
+          <h1 class="text-2xl font-semibold">Fast Delivery</h1>
+          <p class="text-black/50">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 justify-center items-center text-center bg-gray-100 shadow-lg p-8 rounded-2xl"
+        >
+          <i class="fa-solid fa-shirt text-7xl text-sky-500"></i>
+          <h1 class="text-2xl font-semibold">Best Design</h1>
+          <p class="text-black/50">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 justify-center items-center text-center bg-gray-100 shadow-lg p-8 rounded-2xl"
+        >
+          <i class="fa-regular fa-star text-7xl text-sky-500"></i>
+          <h1 class="text-2xl font-semibold">High Quality</h1>
+          <p class="text-black/50">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 justify-center items-center text-center bg-gray-100 shadow-lg p-8 rounded-2xl"
+        >
+          <i class="fa-regular fa-flag text-7xl text-sky-500"></i>
+          <h1 class="text-2xl font-semibold">Localy made</h1>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 px-17 py-15 bg-black/10 rounded-t-4xl"
+      id="about"
+    >
+      <div>
+        <img class="h-25" src="./assets/logo2.png" alt="logo" />
+        <div class="flex flex-row gap-2 items-center gap-3 text-black/50">
+          <i class="fa-solid fa-globe text-lg"></i>
+          <p class="text-sm">
+            The Most Poweful <br />
+            Clothes Store In Algeria
+          </p>
+        </div>
+      </div>
+      <div class="text-black/50">
+        <h1 class="text-lg font-semibold pt-3">Company</h1>
+        <div class="text-sm pt-6">
+          <ul class="">
+            <li class="pb-2">
+              <a href="#products">Prodects <i class="fa-solid fa-share"></i></a>
+            </li>
+            <li class="pb-2">
+              <a href="#services">Services <i class="fa-solid fa-share"></i></a>
+            </li>
+            <li class="">
+              <a href="#">Contact Us <i class="fa-solid fa-share"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-black/50">
+        <h1 class="text-lg font-semibold pt-3">Socials</h1>
+        <div class="text-sm pt-3">
+          <ul>
+            <li class="pb-1">
+              <a href="https://www.instagram.com/404_echoed/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+            </li>
+            <li class="pb-1">
+              <a
+                href="https://www.facebook.com/profile.php?id=100085007451667"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </li>
+            <li class="pb-1">
+              <a href="https://www.tiktok.com/@userofkader" target="_blank"
+                ><i class="fa-brands fa-tiktok"></i> Tik Tok</a
+              >
+            </li>
+            <li class="pb-1">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=Bouattousizay@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-regular fa-envelope"></i> Gmail</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="flex flex-row justify-center items-center bg-gray-200 pb-3">
+        <i class="fa-solid fa-copyright text-sm pr-2"></i>
+        <p class="text-medium font-semibold">
+          KD_.Clothes.Dz All rights reserved. 2026
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
