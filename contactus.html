@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+  </head>
+  <body
+    style="background-image: url(./assets/bg-991.jpg)"
+    class="h-160 lg:h-100 bg-top bg-cover bg-no-repeat relative"
+  >
+    <form action="https://formspree.io/f/xoejwvja" method="post" enctype="multipart/form-data">
+      <div
+        class="flex flex-col items-center mt-40 mx-90 pt-15 pb-5 bg-gray-100 border-2 border-red-500 rounded-4xl"
+      >
+        <div class="flex flex-col gap-3">
+          <label class="text-lg font-bold" for="">Contact Us :</label>
+          <input
+            placeholder="Enter Your Email"
+            class="bg-gray-300 w-100 p-2 rounded-xl placeholder:italic placeholder:text-sm px-2 focus:bg-gray-200 transition outline-none"
+            type="email"
+            name="email"
+            id=""
+            required
+          />
+        </div>
+        <br />
+        <div class="flex flex-col gap-3">
+          <label class="text-lg font-bold" for="">Your Message :</label>
+          <textarea
+            placeholder="Enter Your Message"
+            class="bg-gray-300 w-100 h-25 py-2 rounded-xl placeholder:italic placeholder:text-sm px-2 focus:bg-gray-200 transition outline-none"
+            name="message"
+            id=""
+            required
+          ></textarea>
+        </div>
+        <div>
+          <br />
+          <button
+            type="submit"
+            class="bg-[#ff0000] h-10 w-100 rounded-xl hover:text-[#ff0000] hover:bg-red-200 cursor-pointer"
+          >
+            Send Now
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
