@@ -5,51 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
-    />
   </head>
-  <body
-    style="background-image: url(./assets/bg-991.jpg)"
-    class="h-160 lg:h-100 bg-top bg-cover bg-no-repeat relative"
-  >
-    <form action="https://formspree.io/f/xoejwvja" method="post" enctype="multipart/form-data">
-      <div
-        class="flex flex-col items-center mt-40 mx-90 pt-15 pb-5 bg-gray-100 border-2 border-red-500 rounded-4xl"
+  <body class="m-0 p-0 overflow-x-hidden">
+    <!-- الحاوية الرئيسية تم ضبطها لتأخذ كامل الشاشة min-h-screen وبدون أبعاد ثابتة تخرب الجوال -->
+    <div
+      style="background-image: url(./assets/bg-991.jpg)"
+      class="min-h-screen w-full bg-top bg-cover bg-no-repeat relative flex flex-col justify-center items-center px-4 py-10"
+    >
+      <form
+        action="https://formspree.io/f/xoejwvja"
+        method="post"
+        enctype="multipart/form-data"
+        class="w-full flex justify-center"
       >
-        <div class="flex flex-col gap-3">
-          <label class="text-lg font-bold" for="">Contact Us :</label>
-          <input
-            placeholder="Enter Your Email"
-            class="bg-gray-300 w-100 p-2 rounded-xl placeholder:italic placeholder:text-sm px-2 focus:bg-gray-200 transition outline-none"
-            type="email"
-            name="email"
-            id=""
-            required
-          />
-        </div>
-        <br />
-        <div class="flex flex-col gap-3">
-          <label class="text-lg font-bold" for="">Your Message :</label>
-          <textarea
-            placeholder="Enter Your Message"
-            class="bg-gray-300 w-100 h-25 py-2 rounded-xl placeholder:italic placeholder:text-sm px-2 focus:bg-gray-200 transition outline-none"
-            name="message"
-            id=""
-            required
-          ></textarea>
-        </div>
-        <div>
+        <div
+          class="flex flex-col items-center w-full max-w-sm lg:max-w-none lg:mx-90 pt-8 lg:pt-15 pb-6 lg:pb-5 bg-gray-100 border-2 border-red-500 rounded-4xl px-4"
+        >
+          <div class="flex flex-col gap-3 w-full items-center">
+            <label class="text-lg font-bold self-start pl-2 lg:pl-0" for="email"
+              >Contact Us :</label
+            >
+            <input
+              placeholder="Enter Your Email"
+              class="bg-gray-300 w-full max-w-[320px] lg:max-w-none lg:w-100 p-2 rounded-xl placeholder:italic placeholder:text-sm px-2 focus:bg-gray-200 transition outline-none"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
           <br />
-          <button
-            type="submit"
-            class="bg-[#ff0000] h-10 w-100 rounded-xl hover:text-[#ff0000] hover:bg-red-200 cursor-pointer"
-          >
-            Send Now
-          </button>
+          <div class="flex flex-col gap-3 w-full items-center">
+            <label
+              class="text-lg font-bold self-start pl-2 lg:pl-0"
+              for="message"
+              >Your Message :</label
+            >
+            <textarea
+              placeholder="Enter Your Message"
+              class="bg-gray-300 w-full max-w-[320px] lg:max-w-none lg:w-100 h-25 py-2 rounded-xl placeholder:italic placeholder:text-sm px-2 focus:bg-gray-200 transition outline-none"
+              name="message"
+              id="message"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <div class="w-full flex justify-center">
+            <button
+              type="submit"
+              class="bg-[#ff0000] h-9 lg:h-10 w-full max-w-[320px] lg:max-w-none lg:w-100 rounded-xl hover:text-[#ff0000] hover:bg-red-200 cursor-pointer font-bold"
+            >
+              Send Now
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </body>
 </html>
